@@ -35,4 +35,7 @@ section#main-page{
     font: 300;
     color: #0C222F;
     font-family: "Rubik", sans-serif;
+    padding: 40px;
+    border-style: ridge;
+    border-color: #0C222F;
 }
