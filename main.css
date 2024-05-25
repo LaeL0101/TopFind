@@ -6,36 +6,9 @@
     --cor4:#623CEA;
 }
 
-#main-navbar{
-    margin: -8px; 
-    font-family: "Poetsen One", sans-serif;
-    background-color: #0C222F;
-    font-size: 20px;
-}
 
 body{
     background-color: #1d2e31;
-}
-
-#right-links{
-    margin-left: 1160px;
-    padding: 10px;
-    margin-top: -80px;
-}
-
-main#title{
-    background-color: #FF9100;
-    font: 300;
-    color: #0C222F;
+    font-family: "Poetsen One", sans-serif;]
     font-family: "Rubik", sans-serif;
-}
-
-section#main-page{
-    background-color: #FF9100;
-    font: 300;
-    color: #0C222F;
-    font-family: "Rubik", sans-serif;
-    padding: 40px;
-    border-style: ridge;
-    border-color: #0C222F;
 }
