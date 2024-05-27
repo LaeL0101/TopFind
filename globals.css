@@ -59,7 +59,7 @@ nav ul{
 
 nav ul li{
     color: #fff;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -75,4 +75,19 @@ nav ul li:hover{
 
 header{
     background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li{
+    padding: 25px;
+}
+
+main{
+    padding: 0px;
+    margin: 0px;
 }
