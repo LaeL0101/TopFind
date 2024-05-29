@@ -9,7 +9,7 @@
     --cor2:#E5BA1F;
     --cor3:#FF9100;
     --cor4:#FA824C;
-    --cor4:#623CEA;
+    --cor5:#623CEA;
 }
 
 body{
@@ -99,4 +99,23 @@ main#home{
     padding: 0px;
     margin: 0px;
     background-color:var(--cor2);
+}
+
+main > h1{
+    font-family: "Comfortaa", sans-serif;
+    padding: 5px;
+    text-align: center;
+    border-width: 10px;
+}
+
+#tech{
+    padding: 0px;
+    margin: 0px;
+    background-color:var(--cor4);
+}
+
+#moda{
+    padding: 0px;
+    margin: 0px;
+    background-color:var(--cor1);
 }
