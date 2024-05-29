@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+:root {
+    --cor1:#00A2C4;
+    --cor2:#E5BA1F;
+    --cor3:#FF9100;
+    --cor4:#FA824C;
+    --cor4:#623CEA;
+}
+
 body{
     font-family: arial;
 }
@@ -83,11 +91,12 @@ ul{
     list-style-type: none;
 }
 
-li{
+#card-li{
     padding: 25px;
 }
 
-main{
+main#home{
     padding: 0px;
     margin: 0px;
+    background-color:var(--cor2);
 }
