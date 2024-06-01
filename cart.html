@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <div class="container">
+        <div class="cart">
+            <ul id="cart-items" class="cart-items"></ul>
+            <div class="total">Total: R$ <span id="cart-total">0.00</span></div>
+            <a href="index.html" class="back-link">Voltar para as Compras</a>
+        </div>
+    </div>
+    <script>
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        function renderCart() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('cart-item');
+                li.innerHTML = `
+                    <div class="cart-item-image">
+                        <img src="https://via.placeholder.com/80" alt="${item.product}">
+                    </div>
+                    <div class="cart-item-info">
+                        <h3>${item.product}</h3>
+                        <p>R$ ${item.price.toFixed(2)}</p>
+                    </div>
+                `;
+                cartItems.appendChild(li);
+                total += item.price;
+            });
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        renderCart();
+    </script>
+</body>
+</html>
