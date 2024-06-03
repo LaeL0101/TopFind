@@ -4,3 +4,7 @@
 - #FF9100
 - #FA824C
 - #623CEA
+
+- [ ] Navbar
+- [ ] Funcionalidade
+- [ ]

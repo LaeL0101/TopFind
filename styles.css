@@ -105,6 +105,46 @@ nav {
     color: #28a745;
 }
 
+/* Estilos para os botões */
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #f4511e;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
 .total {
     margin-top: 20px;
     font-size: 20px;
@@ -128,21 +168,6 @@ nav {
     background-color: #f4511e;
 }
 
-.remove-btn {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.remove-btn:hover {
-    background-color: #c82333;
-}
-
 @media (min-width: 768px) {
     nav {
         flex-direction: row;
@@ -158,4 +183,20 @@ nav {
     .menu-toggle {
         display: none;
     }
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
