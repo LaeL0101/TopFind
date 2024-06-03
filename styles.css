@@ -10,48 +10,96 @@ body {
 header {
     background-color: #ff5722;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
 }
 
+.nav-links li {
+    margin: 10px 0;
+}
 
-.cart {
-    
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.container {
     padding: 20px;
 }
 
-.cart-items {
+.products, .cart {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.products-list, .cart-items {
     list-style-type: none;
     padding: 0;
 }
 
-.cart-item {
+.product, .cart-item {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
-.cart-item:last-child {
+.product:last-child, .cart-item:last-child {
     border-bottom: none;
 }
 
-.cart-item-image img {
+.product img, .cart-item img {
     width: 80px;
     border-radius: 5px;
     margin-right: 20px;
 }
 
-.cart-item-info h3 {
+.product h3, .cart-item h3 {
     margin: 0 0 5px 0;
     font-size: 18px;
     color: #333;
 }
 
-.cart-item-info p {
+.product p, .cart-item p {
     margin: 0;
     font-size: 16px;
     color: #28a745;
@@ -78,4 +126,36 @@ header {
 
 .back-link:hover {
     background-color: #f4511e;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-links li {
+        margin: 0 15px;
+    }
+    .menu-toggle {
+        display: none;
+    }
 }
