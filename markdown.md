@@ -5,6 +5,8 @@
 - #FA824C
 - #623CEA
 
+## é só fazer um link a pro carrinho de compras
+
 - [ ] Navbar
-- [ ] Funcionalidade
-- [ ]
+- [ ] Funcionalidade da searchbar
+- [ ]Main

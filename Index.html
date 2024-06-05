@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Vendas - Achados da Shopee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="input.css">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
+
         }
         header {
             background-color: #343a40;
@@ -88,12 +100,79 @@
                 width: calc(50% - 20px);
             }
         }
+
+    
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px 15px;
+            border: 2px solid #495057;
+            border-radius: 25px 0 0 25px;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border: 2px solid #495057;
+            background-color: #495057;
+            color: white;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #343a40;
+        }
     </style>
 </head>
 <body>
+ 
+
     <header>
-        <h1>Achados da Shopee</h1>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar produtos...">
+            <button class="search-button">Pesquisar</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+
+
     </header>
+
     <nav>
         <a href="#tech">Tech</a>
         <a href="#culinaria">Culinária</a>
@@ -103,7 +182,7 @@
         <a href="#games">Games</a>
         <a href="#decoracao">Decoração</a>
     </nav>
-    <a href="cart.html" class="cart-link">Ver Carrinho</a>
+    
 
     
     <section id="tech">
@@ -145,12 +224,7 @@
                 <p>R$ 350.00</p>
                 <button onclick="addToCart('Produto Tech 6', 350)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Produto Tech 7">
-                <h3>Produto Tech 7</h3>
-                <p>R$ 400.00</p>
-                <button onclick="addToCart('Produto Tech 7', 400)">Adicionar ao Carrinho</button>
-            </div>
+ 
         </div>
     </section>
     <section id="culinaria">
@@ -192,12 +266,7 @@
                 <p>R$ 100.00</p>
                 <button onclick="addToCart('Produto Culinária 6', 100)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Produto Culinária 7">
-                <h3>Produto Culinária 7</h3>
-                <p>R$ 110.00</p>
-                <button onclick="addToCart('Produto Culinária 7', 110)">Adicionar ao Carrinho</button>
-            </div>
+     
         </div>
     </section>
     <section id="esportes">
@@ -239,12 +308,7 @@
                 <p>R$ 125.00</p>
                 <button onclick="addToCart('Produto Esportes 6', 125)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Produto Esportes 7">
-                <h3>Produto Esportes 7</h3>
-                <p>R$ 135.00</p>
-                <button onclick="addToCart('Produto Esportes 7', 135)">Adicionar ao Carrinho</button>
-            </div>
+
         </div>
     </section>
     <section id="moda">
@@ -286,12 +350,7 @@
                 <p>R$ 95.00</p>
                 <button onclick="addToCart('Produto Moda 6', 95)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Produto Moda 7">
-                <h3>Produto Moda 7</h3>
-                <p>R$ 105.00</p>
-                <button onclick="addToCart('Produto Moda 7', 105)">Adicionar ao Carrinho</button>
-            </div>
+
         </div>
     </section>
     <section id="acessorios">
@@ -333,12 +392,7 @@
                 <p>R$ 85.00</p>
                 <button onclick="addToCart('Produto Acessórios 6', 85)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Produto Acessórios 7">
-                <h3>Produto Acessórios 7</h3>
-                <p>R$ 95.00</p>
-                <button onclick="addToCart('Produto Acessórios 7', 95)">Adicionar ao Carrinho</button>
-            </div>
+
         </div>
     </section>
     <section id="games">
@@ -380,12 +434,7 @@
             <p>R$ 170.00</p>
             <button onclick="addToCart('Produto Games 6', 170)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Produto Games 7">
-            <h3>Produto Games 7</h3>
-            <p>R$ 180.00</p>
-            <button onclick="addToCart('Produto Games 7', 180)">Adicionar ao Carrinho</button>
-            </div>
+        
             </div>
             </section>
             <section id="decoracao">
@@ -427,13 +476,7 @@
             <p>R$ 75.00</p>
             <button onclick="addToCart('Produto Decoração 6', 75)">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Produto Decoração 7">
-            <h3>Produto Decoração 7</h3>
-            <p>R$ 85.00</p>
-            <button onclick="addToCart('Produto Decoração 7', 85)">Adicionar ao Carrinho</button>
-            
-            </div>
+
             </div>
             </section>
             <script>
